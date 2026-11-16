@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Albor Solar · Paneles solares en Zona Norte</title>
+  <meta name="description" content="Instalamos paneles solares con o sin batería en Zona Norte (Pilar, Tigre, Nordelta, Escobar, San Isidro). Calculá tu ahorro y cotizá gratis por WhatsApp.">
+  <meta name="theme-color" content="#0B1220">
+
+  <!-- Vista previa al compartir el link (WhatsApp / Facebook / Instagram) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Albor Solar · Bajá tu boleta de luz con paneles solares">
+  <meta property="og:description" content="Calculá cuánto ahorrás en 30 segundos y cotizá gratis por WhatsApp. Instalamos en toda Zona Norte.">
+  <!-- EDITAR: subí una foto real de una obra (1200x630) y poné su URL acá -->
+  <meta property="og:image" content="og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ============ META PIXEL ============
+       EDITAR: reemplazá TU_PIXEL_ID por el ID de tu píxel (Administrador de eventos de Meta).
+       Mientras diga TU_PIXEL_ID, el píxel no se carga. -->
+  <script>
+    window.ALBOR_PIXEL_ID = 'TU_PIXEL_ID';
+    if (!/^TU_/.test(window.ALBOR_PIXEL_ID)) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', window.ALBOR_PIXEL_ID);
+      fbq('track', 'PageView');
+    }
+  </script>
+
+  <style>
+    :root{
+      --ink:#0B1220; --ink-2:#121A2B; --ink-3:#080C16;
+      --paper:#FCFCF9; --sand:#F4F2EC; --line:rgba(11,18,32,.08);
+      --muted:rgba(11,18,32,.62);
+      --green:#00B84A; --green-2:#00A242; --green-soft:rgba(0,184,74,.12);
+      --sun:#FFB400; --sun-2:#FF8A3D;
+      --radius:22px;
+      --gutter:20px;
+      --safe-b:env(safe-area-inset-bottom,0px);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:calc(76px + var(--safe-b))}
+    img,svg{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+    h1,h2,h3{margin:0;font-weight:400}
+    p{margin:0}
+    .serif{font-family:'Instrument Serif',Georgia,serif;letter-spacing:-.02em}
+    .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 var(--gutter)}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(0,184,74,.6);animation:pulse 2s infinite}
+    @keyframes pulse{70%{box-shadow:0 0 0 8px rgba(0,184,74,0)}100%{box-shadow:0 0 0 0 rgba(0,184,74,0)}}
+    .accent{color:var(--green);font-style:italic}
+    section{scroll-margin-top:64px}
+
+    /* Buttons */
+    .btn{display:flex;align-items:center;justify-content:center;gap:10px;height:56px;padding:0 24px;border-radius:999px;font-weight:700;font-size:16px;letter-spacing:-.01em;transition:transform .15s,background .15s;width:100%;text-align:center}
+    .btn:active{transform:scale(.98)}
+    .btn-wa{background:var(--green);color:#fff;box-shadow:0 10px 28px rgba(0,184,74,.3)}
+    .btn-wa:hover{background:var(--green-2)}
+    .btn-ghost{background:#fff;border:1.5px solid var(--line)}
+    .btn-light{background:#fff;color:var(--ink)}
+    .wa-ico{width:22px;height:22px;flex:none}
+
+    /* Header */
+    .top{position:sticky;top:0;z-index:40;background:rgba(252,252,249,.92);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+    .top .wrap{height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{display:flex;align-items:center;gap:10px}
+    .logo-mark{width:34px;height:34px;border-radius:10px;background:var(--ink);display:grid;place-items:center;overflow:hidden}
+    .logo b{display:block;font-size:16px;font-weight:800;letter-spacing:-.03em;line-height:1}
+    .logo small{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;opacity:.55;margin-top:3px}
+    .top-cta{display:flex;align-items:center;gap:8px;height:40px;padding:0 14px;border-radius:999px;background:var(--green);color:#fff;font-weight:700;font-size:14px}
+    .top-cta .wa-ico{width:18px;height:18px}
+    .top-phone{display:none;font-weight:600;font-size:14px}
+
+    /* Hero */
+    .hero{padding:28px 0 8px}
+    .chip-dark{background:var(--ink);color:#fff;padding:7px 12px;border-radius:999px;font-size:11px}
+    .hero h1{font-size:44px;line-height:.98;margin-top:18px;letter-spacing:-.035em}
+    .hero h1 .strike{position:relative;color:rgba(11,18,32,.38);white-space:nowrap}
+    .hero h1 .strike::after{content:"";position:absolute;left:-2%;right:-2%;top:52%;height:4px;background:var(--sun-2);border-radius:4px;transform:rotate(-4deg)}
+    .hero-sub{margin-top:16px;font-size:17px;line-height:1.5;color:var(--muted)}
+    .hero-sub b{color:var(--ink);font-weight:700}
+    .hero-ctas{display:grid;gap:10px;margin-top:22px}
+    .rating{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:13px;color:var(--muted)}
+    .stars{color:var(--sun);letter-spacing:1px;font-size:14px}
+    .rating b{color:var(--ink)}
+
+    .hero-visual{position:relative;margin-top:26px;border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;background:linear-gradient(180deg,#1B2440 0%,#3A3557 38%,#E9846A 78%,#FFC27A 100%)}
+    .hero-visual img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .hero-visual .tag{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+    .pill{background:rgba(255,255,255,.94);backdrop-filter:blur(8px);color:var(--ink);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:700;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+    .pill.dark{background:var(--ink);color:#fff}
+    .live-card{position:absolute;top:14px;right:14px;width:150px;background:#fff;border-radius:18px;padding:12px;box-shadow:0 18px 40px rgba(0,0,0,.28)}
+    .live-card .k{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.5}
+    .live-card .v{font-size:22px;font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-top:4px}
+    .live-card .v small{font-size:12px;opacity:.5;font-weight:600}
+    .bars{display:flex;align-items:flex-end;gap:3px;height:34px;margin-top:8px}
+    .bars i{flex:1;background:var(--ink);border-radius:3px;opacity:.15}
+    .bars i.on{opacity:1;background:var(--green)}
+
+    .proof{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+    .proof div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 10px}
+    .proof b{display:block;font-size:17px;font-weight:800;letter-spacing:-.02em}
+    .proof span{display:block;font-size:12px;color:var(--muted);line-height:1.3;margin-top:2px}
+
+    /* Logos strip */
+    .brands{margin-top:24px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .brands p{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.45;text-align:center}
+    .brands .row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin-top:10px;font-weight:800;font-size:14px;letter-spacing:.04em;opacity:.7}
+
+    /* Pain */
+    .pain{background:var(--ink);color:#fff;padding:44px 0;margin-top:36px}
+    .pain h2{font-size:34px;line-height:1}
+    .pain-list{display:grid;gap:12px;margin-top:22px}
+    .pain-item{display:flex;gap:14px;padding:16px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
+    .pain-ico{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;flex:none;font-size:20px}
+    .pain-item b{display:block;font-size:15px;line-height:1.25}
+    .pain-item span{display:block;font-size:14px;line-height:1.45;color:rgba(255,255,255,.62);margin-top:4px}
+
+    /* Generic section */
+    .sec{padding:52px 0}
+    .sec-head h2{font-size:38px;line-height:1}
+    .sec-head p{margin-top:10px;color:var(--muted);font-size:15px}
+    .sand{background:var(--sand)}
+
+    /* Calculator */
+    .calc{display:grid;gap:14px;margin-top:24px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+    .label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .chips button{height:42px;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-weight:600;font-size:14px}
+    .chips button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+    .bill-row{display:flex;justify-content:space-between;align-items:baseline;margin-top:22px}
+    .bill-val{font-size:28px;font-weight:800;letter-spacing:-.03em}
+    input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;margin:4px 0 0}
+    input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:8px;background:linear-gradient(90deg,var(--green) var(--p,50%),#E7E5DE var(--p,50%))}
+    input[type=range]::-moz-range-track{height:8px;border-radius:8px;background:#E7E5DE}
+    input[type=range]::-moz-range-progress{height:8px;border-radius:8px;background:var(--green)}
+    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:#fff;border:3px solid var(--green);margin-top:-11px;box-shadow:0 3px 10px rgba(0,0,0,.18)}
+    input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:#fff;border:3px solid var(--green);box-shadow:0 3px 10px rgba(0,0,0,.18)}
+    .range-legend{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);font-weight:600}
+    .toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+    .toggle b{display:block;font-size:15px}
+    .toggle span{display:block;font-size:13px;color:var(--muted)}
+    .switch{position:relative;width:54px;height:32px;flex:none;border-radius:999px;background:#DCDAD2;transition:background .2s}
+    .switch::after{content:"";position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2);transition:transform .2s}
+    .switch[aria-checked="true"]{background:var(--green)}
+    .switch[aria-checked="true"]::after{transform:translateX(22px)}
+
+    .result{background:var(--ink);color:#fff;border-radius:var(--radius);padding:22px;position:relative;overflow:hidden}
+    .result::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,180,0,.35),transparent 70%)}
+    .result > *{position:relative}
+    .result .label{color:rgba(255,255,255,.55)}
+    .big-save{font-size:44px;font-weight:800;letter-spacing:-.04em;line-height:1;margin-top:8px}
+    .big-save small{font-size:16px;font-weight:600;opacity:.6;letter-spacing:0}
+    .before-after{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:14px;color:rgba(255,255,255,.7)}
+    .before-after s{opacity:.6}
+    .before-after b{color:var(--green);font-size:16px}
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+    .stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px}
+    .stat .k{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.55}
+    .stat .v{font-size:19px;font-weight:800;letter-spacing:-.02em;margin-top:2px}
+    .stat .s{font-size:12px;opacity:.6}
+    .result .btn{margin-top:18px}
+    .fine{font-size:12px;color:rgba(255,255,255,.5);text-align:center;margin-top:10px;line-height:1.4}
+
+    /* Steps */
+    .steps{display:grid;gap:0;margin-top:26px;position:relative}
+    .step{display:grid;grid-template-columns:44px 1fr;gap:14px;padding-bottom:22px;position:relative}
+    .step:not(:last-child)::before{content:"";position:absolute;left:21px;top:44px;bottom:0;width:2px;background:var(--line)}
+    .step-n{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:800}
+    .step:first-child .step-n{background:var(--green)}
+    .step b{display:block;font-size:17px;margin-top:2px}
+    .step .when{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:var(--green-soft);color:var(--green-2);padding:3px 8px;border-radius:999px;margin-top:6px}
+    .step p{color:var(--muted);font-size:15px;margin-top:6px}
+
+    /* Horizontal scroller (mobile) */
+    .scroller{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:24px calc(var(--gutter)*-1) 0;padding:4px var(--gutter) 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+    .scroller::-webkit-scrollbar{display:none}
+    .scroller > *{scroll-snap-align:start;flex:0 0 86%}
+    .swipe-hint{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px;margin-top:4px}
+
+    /* Packs */
+    .packs{background:var(--ink);color:#fff}
+    .packs .sec-head p{color:rgba(255,255,255,.6)}
+    .pack{background:var(--ink-2);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column}
+    .pack.best{background:#fff;color:var(--ink);border:2px solid var(--green)}
+    .pack .tags{display:flex;justify-content:space-between;gap:8px;align-items:center}
+    .tag-s{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.1)}
+    .pack.best .tag-s{background:var(--green);color:#fff}
+    .pack.best .tag-s.alt{background:var(--ink)}
+    .pack h3{font-size:26px;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin-top:16px}
+    .pack .for{font-size:14px;opacity:.65;margin-top:8px}
+    .pack ul{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:9px;font-size:14px}
+    .pack li{display:flex;gap:9px}
+    .pack li::before{content:"✓";color:var(--green);font-weight:800}
+    .pack .price{margin-top:auto;padding-top:22px}
+    .pack .price small{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.5}
+    .pack .price b{font-size:30px;font-weight:800;letter-spacing:-.03em}
+    .pack .btn{height:50px;font-size:15px;margin-top:14px}
+    .pack:not(.best) .btn{background:#fff;color:var(--ink);box-shadow:none}
+    .includes{margin-top:18px;font-size:13px;color:rgba(255,255,255,.6);line-height:1.5}
+
+    /* Works */
+    .work{border-radius:20px;overflow:hidden;background:var(--ink);color:#fff;position:relative;aspect-ratio:4/5}
+    .work img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .work .ph{position:absolute;inset:0;background:linear-gradient(160deg,#22325A,#0B1220)}
+    .work .ph::after{content:"";position:absolute;left:14%;right:14%;top:24%;height:38%;transform:skewY(-10deg);background:
+      repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 2px,transparent 2px 25%),
+      repeating-linear-gradient(0deg,rgba(255,255,255,.14) 0 2px,transparent 2px 33.3%),
+      linear-gradient(135deg,#2A4E86,#13254A);border-radius:6px;border:2px solid rgba(255,255,255,.18)}
+    .work .info{position:absolute;left:0;right:0;bottom:0;padding:16px;background:linear-gradient(transparent,rgba(8,12,22,.92))}
+    .work .info .pill{font-size:11px;padding:6px 10px}
+    .work .info b{display:block;font-size:17px;margin-top:10px}
+    .work .info span{font-size:13px;opacity:.7}
+
+    /* Reviews */
+    .review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column}
+    .review q{display:block;font-size:16px;line-height:1.5;margin-top:10px;quotes:"“" "”"}
+    .review .who{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:16px}
+    .avatar{width:38px;height:38px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-weight:800;color:var(--ink)}
+    .review .who b{display:block;font-size:14px}
+    .review .who div span{display:block;font-size:12px;color:var(--muted)}
+    .g-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:600;margin-bottom:14px}
+
+    /* Guarantees */
+    .guar{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+    .guar div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
+    .guar b{display:block;font-size:24px;font-weight:800;letter-spacing:-.03em}
+    .guar span{display:block;font-size:13px;color:var(--muted);line-height:1.35;margin-top:2px}
+
+    /* FAQ */
+    .faq{margin-top:20px;border-top:1px solid var(--line)}
+    .faq details{border-bottom:1px solid var(--line)}
+    .faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-weight:700;font-size:16px;cursor:pointer}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:18px;font-weight:500;transition:transform .2s}
+    .faq details[open] summary::after{transform:rotate(45deg);background:var(--ink);color:#fff;border-color:var(--ink)}
+    .faq p{padding:0 0 18px;color:var(--muted);font-size:15px;line-height:1.55}
+
+    /* Final CTA / form */
+    .final{background:var(--ink);color:#fff;padding:52px 0}
+    .final h2{font-size:40px;line-height:1}
+    .final .lead{margin-top:12px;color:rgba(255,255,255,.65);font-size:16px}
+    form{display:grid;gap:12px;margin-top:24px}
+    .field label{display:block;font-size:13px;font-weight:600;color:rgba(255,255,255,.7);margin-bottom:6px}
+    .field input,.field select{width:100%;height:54px;border-radius:14px;border:1.5px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#fff;padding:0 16px;font:500 16px 'Plus Jakarta Sans',sans-serif;-webkit-appearance:none;appearance:none}
+    .field select{background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 22px) 24px,calc(100% - 16px) 24px;background-size:6px 6px;background-repeat:no-repeat}
+    .field select option{color:var(--ink)}
+    .field input:focus,.field select:focus{outline:none;border-color:var(--green);background:rgba(255,255,255,.1)}
+    .field input::placeholder{color:rgba(255,255,255,.35)}
+    .final .fine{margin-top:4px}
+    .alt-contact{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+    .alt-contact a{display:flex;align-items:center;justify-content:center;gap:8px;height:50px;border-radius:14px;border:1.5px solid rgba(255,255,255,.14);font-weight:600;font-size:14px}
+
+    footer{background:var(--ink-3);color:rgba(255,255,255,.65);padding:34px 0 24px;font-size:14px}
+    footer .logo b{color:#fff}
+    footer .zones{margin-top:16px;line-height:1.6}
+    footer .contact{display:grid;gap:6px;margin-top:16px}
+    footer .contact a{color:#fff;font-weight:600}
+    footer .legal{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;opacity:.6}
+
+    /* Sticky mobile bar */
+    .sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px var(--gutter) calc(10px + var(--safe-b));background:rgba(252,252,249,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);display:grid;grid-template-columns:56px 1fr;gap:10px;transform:translateY(110%);transition:transform .3s ease}
+    .sticky-bar.show{transform:none}
+    .sticky-bar .call{height:56px;border-radius:18px;border:1.5px solid var(--line);display:grid;place-items:center;background:#fff}
+    .sticky-bar .btn{height:56px;font-size:15px;white-space:nowrap;padding:0 14px}
+
+    /* Reveal animation */
+    .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+    .rv.in{opacity:1;transform:none}
+    @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.dot{animation:none}html{scroll-behavior:auto}}
+
+    /* ---------- Tablet / desktop ---------- */
+    @media (min-width:760px){
+      :root{--gutter:32px}
+      body{padding-bottom:0}
+      .sticky-bar{display:none}
+      .top .wrap{height:68px}
+      .top-phone{display:inline}
+      .hero{padding:56px 0 24px}
+      .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+      .hero h1{font-size:68px}
+      .hero-ctas{grid-template-columns:auto auto;justify-content:start}
+      .hero-ctas .btn{width:auto;white-space:nowrap}
+      .hero-visual{margin-top:0}
+      .pain-list{grid-template-columns:repeat(3,1fr)}
+      .pain h2,.sec-head h2,.final h2{font-size:54px}
+      .sec{padding:84px 0}
+      .calc{grid-template-columns:1.1fr .9fr;align-items:start}
+      .card,.result{padding:30px}
+      .steps{grid-template-columns:repeat(4,1fr);gap:20px}
+      .step{grid-template-columns:1fr;padding:0}
+      .step::before{display:none}
+      .scroller{overflow:visible;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr)}
+      .scroller.four{grid-template-columns:repeat(4,1fr)}
+      .swipe-hint{display:none}
+      .guar{grid-template-columns:repeat(4,1fr)}
+      .faq{max-width:760px}
+      .final-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+      form{margin-top:0}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header class="top">
+  <div class="wrap">
+    <a href="#" class="logo" aria-label="Albor Solar, inicio">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6" fill="#FFB400"/><rect x="0" y="15" width="24" height="10" fill="#0B1220"/><path d="M3 15h18" stroke="#00B84A" stroke-width="2" stroke-linecap="round"/></svg>
+      </span>
+      <span><b>ALBOR SOLAR</b><small>Zona Norte</small></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:16px">
+      <a class="top-phone" data-tel href="#">11 5238-9010</a>
+      <a class="top-cta" data-wa="header" href="#">
+        <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.6-8.4z"/></svg>
+        Cotizar
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow chip-dark"><span class="dot"></span>Instalamos en Pilar, Tigre, Nordelta y Escobar</span>
+      <h1 class="serif">Bajá tu boleta de luz <span class="accent">hasta un 80%.</span></h1>
+      <p class="hero-sub">Paneles solares <b>con o sin batería</b> para tu casa en Zona Norte. Nos ocupamos de todo: diseño, instalación y <b>trámite con Edenor</b>. Vos solo firmás.</p>
+
+      <div class="hero-ctas">
+        <a class="btn btn-wa" data-wa="hero" href="#">
+          <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>
+          Cotizar gratis por WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#calculadora">Calcular mi ahorro en 30 seg</a>
+      </div>
+
+      <!-- EDITAR: poné tu puntaje y cantidad de reseñas reales de Google -->
+      <div class="rating">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><b>4.9/5</b> en Google · 87 reseñas</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="hero-visual" role="img" aria-label="Casa con paneles solares al amanecer">
+        <!-- EDITAR: cuando tengas una foto real de una obra, descomentá esta línea y poné la ruta:
+        <img class="photo" src="fotos/obra-hero.jpg" alt="Instalación de paneles solares en Nordelta" fetchpriority="high">
+        -->
+        <svg viewBox="0 0 400 340" preserveAspectRatio="xMidYMax slice" style="position:absolute;inset:0;width:100%;height:100%">
+          <circle cx="300" cy="235" r="62" fill="#FFD27A" opacity=".55"/>
+          <circle cx="300" cy="235" r="40" fill="#FFE2A3"/>
+          <path d="M0 250 Q100 225 200 245 T400 238 V340 H0Z" fill="#2B2A44" opacity=".65"/>
+          <!-- house -->
+          <g transform="translate(70 150)">
+            <path d="M0 95 L0 60 L120 0 L240 60 L240 95" fill="#141C30"/>
+            <!-- panels on roof -->
+            <g fill="#2E5797" stroke="#9DB8E8" stroke-opacity=".55" stroke-width="1.2" stroke-linejoin="round">
+              <polygon points="30,49 54,37 54,59 30,71"/><polygon points="57,35.5 81,23.5 81,45.5 57,57.5"/><polygon points="84,22 108,10 108,32 84,44"/>
+            </g>
+            <g fill="#3A66AA" stroke="#9DB8E8" stroke-opacity=".55" stroke-width="1.2" stroke-linejoin="round">
+              <polygon points="135,11.5 159,23.5 159,45.5 135,33.5"/><polygon points="162,25 186,37 186,59 162,47"/><polygon points="189,38.5 213,50.5 213,72.5 189,60.5"/>
+            </g>
+            <rect x="12" y="95" width="216" height="95" fill="#1A2440"/>
+            <rect x="40" y="120" width="40" height="34" rx="3" fill="#FFC56B" opacity=".9"/>
+            <rect x="160" y="120" width="40" height="34" rx="3" fill="#FFC56B" opacity=".9"/>
+            <rect x="102" y="128" width="36" height="62" rx="3" fill="#0B1220"/>
+          </g>
+          <path d="M0 300 H400 V340 H0Z" fill="#0B1220"/>
+        </svg>
+
+        <div class="live-card">
+          <div class="k">Generando hoy</div>
+          <div class="v">42.7 <small>kWh</small></div>
+          <div class="bars" aria-hidden="true"><i style="height:30%"></i><i style="height:55%"></i><i style="height:75%"></i><i class="on" style="height:100%"></i><i style="height:80%"></i><i style="height:50%"></i></div>
+        </div>
+        <div class="tag">
+          <span class="pill"><span class="dot"></span>Ahorro 80% promedio</span>
+          <span class="pill dark">App en tu celu</span>
+        </div>
+      </div>
+
+      <div class="proof">
+        <div><b>+150</b><span>casas instaladas</span></div>
+        <div><b>1–3 días</b><span>de instalación</span></div>
+        <div><b>25 años</b><span>garantía paneles</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="brands">
+      <p>Trabajamos con equipos Tier 1</p>
+      <div class="row"><span>LONGi</span><span>Deye</span><span>Huawei</span><span>Growatt</span><span>Pylontech</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PROBLEMA ======================= -->
+<section class="pain">
+  <div class="wrap">
+    <h2 class="serif rv">La luz no para de subir.<br><span class="accent">Los cortes tampoco.</span></h2>
+    <div class="pain-list">
+      <div class="pain-item rv"><div class="pain-ico">📈</div><div><b>La boleta se multiplicó</b><span>Con los aumentos de tarifa, muchas casas de Zona Norte ya pagan más de $300.000 por mes.</span></div></div>
+      <div class="pain-item rv"><div class="pain-ico">⚡</div><div><b>Cortes en pleno verano</b><span>Con batería, la heladera, las luces, el WiFi y el portón siguen andando. Ni te enterás.</span></div></div>
+      <div class="pain-item rv"><div class="pain-ico">🏡</div><div><b>Tu casa vale más</b><span>Una casa que genera su propia energía es más atractiva para vender o alquilar.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CALCULADORA ======================= -->
+<section class="sec sand" id="calculadora">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow" style="color:var(--green-2)">Calculadora · 30 segundos</span>
+      <h2 class="serif" style="margin-top:8px">¿Cuánto ahorrás <span class="accent">en tu casa?</span></h2>
+      <p>Mové la barra con lo que pagás de luz por mes. Sin dejar mail ni datos.</p>
+    </div>
+
+    <div class="calc">
+      <div class="card rv">
+        <div class="label">¿Dónde vivís?</div>
+        <div class="chips" id="zones" role="group" aria-label="Zona"></div>
+
+        <div class="bill-row">
+          <label class="label" for="bill">Boleta de luz por mes</label>
+        </div>
+        <div class="bill-val" id="billVal">$300.000</div>
+        <input id="bill" type="range" min="80000" max="1000000" step="10000" value="300000" aria-describedby="billVal">
+        <div class="range-legend"><span>$80k</span><span>$500k</span><span>$1M+</span></div>
+
+        <div class="toggle">
+          <div><b>Quiero batería anti‑cortes</b><span>Seguís con luz cuando se corta</span></div>
+          <button type="button" class="switch" id="battery" role="switch" aria-checked="false" aria-label="Agregar batería"></button>
+        </div>
+      </div>
+
+      <div class="result rv" aria-live="polite">
+        <div class="label" id="rZone">Tu ahorro estimado</div>
+        <div class="big-save"><span id="rSave">$246.000</span> <small>/ mes</small></div>
+        <div class="before-after"><s id="rBefore">$300.000</s> → <b id="rAfter">$54.000</b> de boleta</div>
+
+        <div class="stats">
+          <div class="stat"><div class="k">Sistema</div><div class="v" id="rKw">6 kW</div><div class="s" id="rPanels">10 paneles</div></div>
+          <div class="stat"><div class="k">Ahorro al año</div><div class="v" id="rYear">$2,9M</div><div class="s">a valores de hoy</div></div>
+          <div class="stat"><div class="k">Inversión aprox.</div><div class="v" id="rCost">$5M</div><div class="s">financiación disponible</div></div>
+          <div class="stat"><div class="k">Se paga en</div><div class="v" id="rRoi">~2 años</div><div class="s">después, luz casi gratis</div></div>
+        </div>
+
+        <a class="btn btn-wa" data-wa="calc" href="#">
+          <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>
+          Enviarme este presupuesto
+        </a>
+        <p class="fine">Es una estimación. Con una foto de tu boleta te pasamos el número exacto. Sin compromiso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CÓMO TRABAJAMOS ======================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="serif">Así de simple. <span class="accent">Nosotros hacemos todo.</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="step-n">1</div><div><b>Nos mandás tu boleta</b><span class="when">Hoy · por WhatsApp</span><p>Una foto alcanza. En 24 hs te decimos si te conviene y cuánto ahorrás. Si no ahorrás al menos 70%, te lo decimos.</p></div></div>
+      <div class="step rv"><div class="step-n">2</div><div><b>Visitamos tu casa</b><span class="when">Sin cargo</span><p>Medimos el techo y armamos la propuesta con números reales: generación, ahorro y en cuánto se paga.</p></div></div>
+      <div class="step rv"><div class="step-n">3</div><div><b>Instalamos</b><span class="when">1 a 3 días</span><p>Cuadrilla propia, no tercerizamos. Techo impecable y cableado prolijo.</p></div></div>
+      <div class="step rv"><div class="step-n">4</div><div><b>Conectamos y listo</b><span class="when">Trámite incluido</span><p>Hacemos el trámite del medidor bidireccional con Edenor. Ves todo desde la app en tu celular.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PACKS ======================= -->
+<section class="sec packs" id="packs">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="serif">Elegí tu pack. <span class="accent">Sin sorpresas.</span></h2>
+      <p>Precio final con instalación, estructura, cableado, trámite y app incluidos.</p>
+    </div>
+
+    <!-- EDITAR: revisá equipos y precios de cada pack -->
+    <div class="scroller" id="packList">
+      <article class="pack">
+        <div class="tags"><span class="tag-s">Casa chica</span><span style="font-size:12px;opacity:.6">Sin batería</span></div>
+        <h3>Pack Esencial<br>5 kW</h3>
+        <p class="for">Para boletas de hasta $150.000. Aire, heladera y casa funcionando.</p>
+        <ul><li>8 paneles LONGi Tier 1</li><li>Inversor Growatt 5 kW con WiFi</li><li>Estructura de aluminio</li><li>Ahorro aprox. $120.000/mes</li></ul>
+        <div class="price"><small>Desde</small><b>$3,9M</b></div>
+        <a class="btn btn-wa" data-wa="pack" data-pack="Pack Esencial 5 kW" href="#">Consultar este pack</a>
+      </article>
+
+      <article class="pack best">
+        <div class="tags"><span class="tag-s">⭐ El más elegido</span><span class="tag-s alt">Anti‑cortes</span></div>
+        <h3>Pack Familia<br>10 kW + Batería</h3>
+        <p class="for">Casa de 250–300 m² con pileta y aires. No te enterás de los cortes.</p>
+        <ul><li>16 paneles LONGi Hi‑MO</li><li>Inversor híbrido Deye 10 kW</li><li>Batería Pylontech 10 kWh</li><li>Respaldo: heladera, luces, WiFi y portón</li><li>Ahorro aprox. 80%</li></ul>
+        <div class="price"><small>Desde</small><b>$8,2M</b></div>
+        <a class="btn btn-wa" data-wa="pack" data-pack="Pack Familia 10 kW + Batería" href="#">Consultar este pack</a>
+      </article>
+
+      <article class="pack">
+        <div class="tags"><span class="tag-s">Casa grande / Comercio</span><span style="font-size:12px;opacity:.6">Trifásico</span></div>
+        <h3>Pack Premium<br>15–20 kW</h3>
+        <p class="for">Para boletas de más de $600.000, casas grandes, oficinas y comercios.</p>
+        <ul><li>Inversor Huawei SUN2000</li><li>Estructura reforzada</li><li>Opción con baterías</li><li>Proyecto a medida</li></ul>
+        <div class="price"><small>Desde</small><b>A medida</b></div>
+        <a class="btn btn-wa" data-wa="pack" data-pack="Pack Premium 15-20 kW" href="#">Pedir proyecto</a>
+      </article>
+    </div>
+    <p class="swipe-hint" style="color:rgba(255,255,255,.5)">Deslizá para ver más →</p>
+    <p class="includes">💳 Consultá por financiación en cuotas.</p>
+  </div>
+</section>
+
+<!-- ======================= OBRAS ======================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="serif">Obras <span class="accent">en tu zona.</span></h2>
+      <p>Algunas casas que ya generan su propia energía.</p>
+    </div>
+    <!-- EDITAR: reemplazá cada <div class="ph"></div> por <img src="fotos/obra1.jpg" alt="..." loading="lazy"> con fotos reales -->
+    <div class="scroller four">
+      <div class="work"><div class="ph"></div><div class="info"><span class="pill">10 kW · Batería</span><b>Nordelta</b><span>Boleta: $520k → $89k</span></div></div>
+      <div class="work"><div class="ph"></div><div class="info"><span class="pill">7,2 kW</span><b>Pilar</b><span>Instalada en 2 días</span></div></div>
+      <div class="work"><div class="ph"></div><div class="info"><span class="pill">8,5 kW</span><b>Tigre</b><span>Ahorro 82%</span></div></div>
+      <div class="work"><div class="ph"></div><div class="info"><span class="pill">5,5 kW</span><b>Escobar</b><span>Sin batería</span></div></div>
+    </div>
+    <p class="swipe-hint">Deslizá para ver más →</p>
+  </div>
+</section>
+
+<!-- ======================= RESEÑAS ======================= -->
+<!-- IMPORTANTE: estas reseñas son de ejemplo. Antes de lanzar anuncios, reemplazalas por reseñas
+     reales de tus clientes (con su permiso). Meta puede rechazar anuncios con testimonios inventados. -->
+<section class="sec sand">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="g-badge"><span class="stars">★★★★★</span> 4.9/5 en Google</span>
+      <h2 class="serif">Lo que dicen <span class="accent">nuestros clientes.</span></h2>
+    </div>
+    <div class="scroller">
+      <article class="review"><span class="stars">★★★★★</span><q>No nos enteramos más de los cortes y la app marca todo. La boleta bajó de $520k a $89k. En 2 días estaba funcionando.</q><div class="who"><span class="avatar">M</span><div><b>María</b><span>Nordelta · 10 kW + batería</span></div></div></article>
+      <article class="review"><span class="stars">★★★★★</span><q>Pensé que era humo. Instalación impecable y el techo quedó perfecto. Se ocuparon de todo el trámite con Edenor.</q><div class="who"><span class="avatar">J</span><div><b>Jorge y Silvina</b><span>Pilar · 7 kW</span></div></div></article>
+      <article class="review"><span class="stars">★★★★★</span><q>Para la oficina fue clave. Bajamos el costo fijo y los fines de semana le vendemos energía a la red.</q><div class="who"><span class="avatar">E</span><div><b>Estudio López</b><span>Vicente López · Comercio</span></div></div></article>
+    </div>
+    <p class="swipe-hint">Deslizá para ver más →</p>
+  </div>
+</section>
+
+<!-- ======================= GARANTÍAS ======================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2 class="serif">Garantía <span class="accent">por escrito.</span></h2>
+      <p>Trabajamos con equipos de primeras marcas y te dejamos todo firmado.</p>
+    </div>
+    <div class="guar">
+      <div class="rv"><b>25 años</b><span>de producción de los paneles</span></div>
+      <div class="rv"><b>10 años</b><span>en inversor (extensible)</span></div>
+      <div class="rv"><b>10 años</b><span>en baterías de litio</span></div>
+      <div class="rv"><b>5 años</b><span>de instalación y filtraciones</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="sec sand" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv"><h2 class="serif">Preguntas <span class="accent">frecuentes.</span></h2></div>
+    <div class="faq">
+      <details><summary>¿Cuánto tarda la instalación?</summary><p>De 1 a 3 días según el techo. Desde el primer día ya ves la generación en la app. La conexión del medidor bidireccional con Edenor suele tardar unas semanas más, y el trámite lo hacemos nosotros.</p></details>
+      <details><summary>¿Qué pasa los días nublados o de noche?</summary><p>Los días nublados generás menos y de noche no generás. Pero con el medidor bidireccional, lo que te sobra en los días de sol se descuenta de tu boleta. Si tenés batería, de noche y en los cortes usás la energía guardada.</p></details>
+      <details><summary>¿Cuánto voy a ahorrar realmente?</summary><p>Depende de tu consumo y tu techo, pero en Zona Norte el ahorro promedio está entre 70% y 85%. Mandanos una foto de tu boleta y te pasamos el número exacto para tu casa.</p></details>
+      <details><summary>¿Ustedes hacen los trámites con Edenor?</summary><p>Sí, está 100% incluido: pedido del medidor bidireccional y habilitación. Vos solo firmás.</p></details>
+      <details><summary>¿Se puede pagar en cuotas?</summary><p>Sí. Consultanos por WhatsApp y te contamos las opciones de financiación disponibles.</p></details>
+      <details><summary>¿Qué mantenimiento necesita?</summary><p>Casi nada. La lluvia limpia los paneles y recomendamos un lavado al año. La app te avisa si algo no funciona bien.</p></details>
+      <details><summary>¿Le hacen agujeros al techo? ¿Se puede filtrar?</summary><p>Usamos fijaciones con sellado específico para cada tipo de techo (teja, chapa o losa) y la instalación tiene 5 años de garantía contra filtraciones.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= CTA FINAL / FORM ======================= -->
+<section class="final" id="cotizar">
+  <div class="wrap final-grid">
+    <div class="rv">
+      <span class="eyebrow" style="color:var(--green)"><span class="dot"></span>Respondemos en el día</span>
+      <h2 class="serif" style="margin-top:10px">Pedí tu cotización <span class="accent">gratis.</span></h2>
+      <p class="lead">Completá estos 3 datos y se abre WhatsApp con tu consulta lista para enviar. Sin compromiso.</p>
+    </div>
+
+    <form id="leadForm" novalidate>
+      <div class="field"><label for="fName">Tu nombre</label><input id="fName" name="name" autocomplete="given-name" placeholder="Ej: Martín" required></div>
+      <div class="field"><label for="fZone">Barrio / localidad</label><select id="fZone" name="zone" required></select></div>
+      <div class="field"><label for="fBill">¿Cuánto pagás de luz por mes?</label>
+        <select id="fBill" name="bill">
+          <option>Menos de $150.000</option>
+          <option selected>$150.000 a $300.000</option>
+          <option>$300.000 a $500.000</option>
+          <option>$500.000 a $800.000</option>
+          <option>Más de $800.000</option>
+        </select>
+      </div>
+      <button class="btn btn-wa" type="submit" style="margin-top:6px">
+        <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>
+        Enviar por WhatsApp
+      </button>
+      <p class="fine">Tus datos solo se usan para responderte.</p>
+
+      <div class="alt-contact">
+        <a data-tel href="#">📞 Llamar</a>
+        <a data-mail href="#">✉️ Email</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><span class="logo-mark" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="15" r="6" fill="#FFB400"/><rect x="0" y="15" width="24" height="10" fill="#0B1220"/><path d="M3 15h18" stroke="#00B84A" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>ALBOR SOLAR</b><small>Energía solar · Zona Norte</small></span></div>
+    <p class="zones">Instalamos en Pilar, Tigre, Nordelta, Escobar, San Isidro, Vicente López, San Fernando, Martínez, Olivos, Benavídez, Pacheco, Beccar y Maschwitz.</p>
+    <div class="contact">
+      <a data-tel href="#">11 5238-9010</a>
+      <a data-mail href="#">hola@albor.solar</a>
+      <span>Lun a Vie 9–18 h · Sáb 10–13 h</span>
+    </div>
+    <p class="legal">© <span id="yr"></span> Albor Solar. Los valores de ahorro son estimativos y dependen del consumo, la orientación del techo y las tarifas vigentes.</p>
+  </div>
+</footer>
+
+<!-- Barra fija abajo (solo celular) -->
+<div class="sticky-bar" id="stickyBar">
+  <a class="call" data-tel href="#" aria-label="Llamar">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+  </a>
+  <a class="btn btn-wa" data-wa="sticky" href="#">
+    <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>
+    Cotizar por WhatsApp
+  </a>
+</div>
+
+<!-- WhatsApp icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.6-8.4z"/></symbol></svg>
+
+<script>
+/* =====================================================================
+   CONFIGURACIÓN — EDITAR ACÁ
+   ===================================================================== */
+const CONFIG = {
+  whatsapp: '5491152389010',          // Código país + área sin 0 ni 15 (ej: 54 9 11 XXXX XXXX)
+  telefono: '+541152389010',
+  email:    'hola@albor.solar',
+  zonas: ['Pilar', 'Tigre', 'Nordelta', 'Escobar', 'San Isidro', 'Vicente López', 'Otra'],
+
+  // Supuestos de la calculadora (ajustalos con tus números reales)
+  calc: {
+    ahorro: 0.80,                // % de la boleta que se ahorra
+    boletaPorKw: 48000,          // $ de boleta mensual que "cubre" cada kW instalado
+    costoKw: 780000,             // $ por kW sin batería (instalado)
+    costoBateria: 2600000,       // $ extra por batería 10 kWh
+    panelW: 580,                 // potencia de cada panel
+    kwMin: 3, kwMax: 20
+  }
+};
+
+/* ===================================================================== */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const fmt = n => '$' + Math.round(n).toLocaleString('es-AR');
+const fmtM = n => n >= 1e6 ? '$' + (n / 1e6).toLocaleString('es-AR', { maximumFractionDigits: 1 }) + 'M' : fmt(n);
+const track = (ev, data) => { if (window.fbq) fbq('track', ev, data || {}); };
+
+const state = { zone: 'Pilar', bill: 300000, battery: false };
+
+function waLink(msg) { return 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg); }
+
+function calc() {
+  const c = CONFIG.calc;
+  const kw = Math.min(c.kwMax, Math.max(c.kwMin, Math.round((state.bill / c.boletaPorKw) * 2) / 2));
+  const save = state.bill * c.ahorro;
+  const cost = kw * c.costoKw + (state.battery ? c.costoBateria : 0);
+  const years = cost / (save * 12);
+  const panels = Math.ceil(kw * 1000 / c.panelW);
+  return { kw, save, cost, years, panels, after: state.bill - save };
+}
+
+function render() {
+  const r = calc();
+  const bill = $('#bill');
+  bill.style.setProperty('--p', ((state.bill - bill.min) / (bill.max - bill.min) * 100) + '%');
+  $('#billVal').textContent = fmt(state.bill) + (state.bill >= 1000000 ? '+' : '');
+  $('#rZone').textContent = 'Tu ahorro estimado en ' + (state.zone === 'Otra' ? 'Zona Norte' : state.zone);
+  $('#rSave').textContent = fmt(r.save);
+  $('#rBefore').textContent = fmt(state.bill);
+  $('#rAfter').textContent = fmt(r.after);
+  $('#rKw').textContent = r.kw.toLocaleString('es-AR') + ' kW';
+  $('#rPanels').textContent = r.panels + ' paneles' + (state.battery ? ' + batería' : '');
+  $('#rYear').textContent = fmtM(r.save * 12);
+  $('#rCost').textContent = fmtM(r.cost);
+  $('#rRoi').textContent = '~' + (r.years < 1.5 ? '1 año' : Math.round(r.years) + ' años');
+}
+
+// Zonas (chips + select)
+$('#zones').innerHTML = CONFIG.zonas.map(z => `<button type="button" aria-pressed="${z === state.zone}">${z}</button>`).join('');
+$('#zones').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  state.zone = b.textContent;
+  $$('#zones button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  render();
+});
+$('#fZone').innerHTML = '<option value="" disabled selected>Elegí tu zona</option>' + CONFIG.zonas.map(z => `<option>${z}</option>`).join('');
+
+$('#bill').addEventListener('input', e => { state.bill = +e.target.value; render(); });
+$('#battery').addEventListener('click', e => {
+  state.battery = !state.battery;
+  e.currentTarget.setAttribute('aria-checked', state.battery);
+  render();
+});
+
+// Mensajes de WhatsApp prearmados según el botón
+function messageFor(el) {
+  const src = el.dataset.wa;
+  if (src === 'calc') {
+    const r = calc();
+    return `Hola Albor Solar! Usé la calculadora de la web:\n` +
+      `• Zona: ${state.zone}\n• Boleta: ${fmt(state.bill)}/mes\n• Sistema: ${r.kw.toLocaleString('es-AR')} kW${state.battery ? ' con batería' : ''}\n` +
+      `• Ahorro estimado: ${fmt(r.save)}/mes\n\nQuiero una cotización exacta para mi casa.`;
+  }
+  if (src === 'pack') return `Hola Albor Solar! Quiero información sobre el ${el.dataset.pack}.`;
+  return 'Hola Albor Solar! Quiero cotizar paneles solares para mi casa.';
+}
+
+document.addEventListener('click', e => {
+  const wa = e.target.closest('[data-wa]');
+  if (wa) {
+    e.preventDefault();
+    track('Contact', { content_name: wa.dataset.wa });
+    window.open(waLink(messageFor(wa)), '_blank', 'noopener');
+  }
+  if (e.target.closest('[data-tel]')) track('Contact', { content_name: 'telefono' });
+});
+
+$$('[data-tel]').forEach(a => a.href = 'tel:' + CONFIG.telefono);
+$$('[data-mail]').forEach(a => { a.href = 'mailto:' + CONFIG.email; if (a.closest('.contact')) a.textContent = CONFIG.email; });
+
+// Formulario → WhatsApp
+$('#leadForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = e.target;
+  const name = f.name.value.trim(), zone = f.zone.value;
+  if (!name) { f.name.focus(); f.name.style.borderColor = '#FF6B5A'; return; }
+  if (!zone) { f.zone.focus(); f.zone.style.borderColor = '#FF6B5A'; return; }
+  const msg = `Hola Albor Solar! Soy ${name}, de ${zone}.\nPago de luz: ${f.bill.value} por mes.\nQuiero una cotización de paneles solares.`;
+  track('Lead', { content_name: 'formulario', zona: zone });
+  window.open(waLink(msg), '_blank', 'noopener');
+});
+
+// Barra fija: aparece después del hero, se oculta en el formulario final
+const bar = $('#stickyBar');
+const heroCtas = $('.hero-ctas'), finalSec = $('#cotizar');
+let heroVisible = true, finalVisible = false;
+new IntersectionObserver(([en]) => { heroVisible = en.isIntersecting; bar.classList.toggle('show', !heroVisible && !finalVisible); }).observe(heroCtas);
+new IntersectionObserver(([en]) => { finalVisible = en.isIntersecting; bar.classList.toggle('show', !heroVisible && !finalVisible); }, { threshold: .25 }).observe(finalSec);
+
+// Animación al hacer scroll
+const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
+$$('.rv').forEach(el => io.observe(el));
+
+$('#yr').textContent = new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
