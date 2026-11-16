@@ -47,7 +47,7 @@
     }
     *,*::before,*::after{box-sizing:border-box}
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-    body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;padding-bottom:calc(76px + var(--safe-b))}
+    body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.5 'Plus Jakarta Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
     img,svg{display:block;max-width:100%}
     a{color:inherit;text-decoration:none}
     button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
@@ -82,7 +82,7 @@
     .top-phone{display:none;font-weight:600;font-size:14px}
 
     /* Hero */
-    .hero{padding:28px 0 8px}
+    .hero{padding:28px 0 40px}
     .chip-dark{background:var(--ink);color:#fff;padding:7px 12px;border-radius:999px;font-size:11px}
     .hero h1{font-size:44px;line-height:.98;margin-top:18px;letter-spacing:-.035em}
     .hero h1 .strike{position:relative;color:rgba(11,18,32,.38);white-space:nowrap}
@@ -90,9 +90,6 @@
     .hero-sub{margin-top:16px;font-size:17px;line-height:1.5;color:var(--muted)}
     .hero-sub b{color:var(--ink);font-weight:700}
     .hero-ctas{display:grid;gap:10px;margin-top:22px}
-    .rating{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:13px;color:var(--muted)}
-    .stars{color:var(--sun);letter-spacing:1px;font-size:14px}
-    .rating b{color:var(--ink)}
 
     .hero-visual{position:relative;margin-top:26px;border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;background:linear-gradient(180deg,#1B2440 0%,#3A3557 38%,#E9846A 78%,#FFC27A 100%)}
     .hero-visual img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -113,18 +110,8 @@
     .proof span{display:block;font-size:12px;color:var(--muted);line-height:1.3;margin-top:2px}
 
     /* Logos strip */
-    .brands{margin-top:24px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .brands p{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.45;text-align:center}
-    .brands .row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin-top:10px;font-weight:800;font-size:14px;letter-spacing:.04em;opacity:.7}
 
     /* Pain */
-    .pain{background:var(--ink);color:#fff;padding:44px 0;margin-top:36px}
-    .pain h2{font-size:34px;line-height:1}
-    .pain-list{display:grid;gap:12px;margin-top:22px}
-    .pain-item{display:flex;gap:14px;padding:16px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}
-    .pain-ico{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;flex:none;font-size:20px}
-    .pain-item b{display:block;font-size:15px;line-height:1.25}
-    .pain-item span{display:block;font-size:14px;line-height:1.45;color:rgba(255,255,255,.62);margin-top:4px}
 
     /* Generic section */
     .sec{padding:52px 0}
@@ -206,31 +193,14 @@
     .pack .price{margin-top:auto;padding-top:22px}
     .pack .price small{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.5}
     .pack .price b{font-size:30px;font-weight:800;letter-spacing:-.03em}
-    .pack .btn{height:50px;font-size:15px;margin-top:14px}
+    .pack .btn{height:50px;font-size:15px;margin-top:auto}
+    .pack ul{margin-bottom:22px}
     .pack:not(.best) .btn{background:#fff;color:var(--ink);box-shadow:none}
     .includes{margin-top:18px;font-size:13px;color:rgba(255,255,255,.6);line-height:1.5}
 
     /* Works */
-    .work{border-radius:20px;overflow:hidden;background:var(--ink);color:#fff;position:relative;aspect-ratio:4/5}
-    .work img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-    .work .ph{position:absolute;inset:0;background:linear-gradient(160deg,#22325A,#0B1220)}
-    .work .ph::after{content:"";position:absolute;left:14%;right:14%;top:24%;height:38%;transform:skewY(-10deg);background:
-      repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 2px,transparent 2px 25%),
-      repeating-linear-gradient(0deg,rgba(255,255,255,.14) 0 2px,transparent 2px 33.3%),
-      linear-gradient(135deg,#2A4E86,#13254A);border-radius:6px;border:2px solid rgba(255,255,255,.18)}
-    .work .info{position:absolute;left:0;right:0;bottom:0;padding:16px;background:linear-gradient(transparent,rgba(8,12,22,.92))}
-    .work .info .pill{font-size:11px;padding:6px 10px}
-    .work .info b{display:block;font-size:17px;margin-top:10px}
-    .work .info span{font-size:13px;opacity:.7}
 
     /* Reviews */
-    .review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;flex-direction:column}
-    .review q{display:block;font-size:16px;line-height:1.5;margin-top:10px;quotes:"“" "”"}
-    .review .who{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:16px}
-    .avatar{width:38px;height:38px;border-radius:50%;background:var(--sand);display:grid;place-items:center;font-weight:800;color:var(--ink)}
-    .review .who b{display:block;font-size:14px}
-    .review .who div span{display:block;font-size:12px;color:var(--muted)}
-    .g-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:600;margin-bottom:14px}
 
     /* Guarantees */
     .guar{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
@@ -251,18 +221,11 @@
     .final{background:var(--ink);color:#fff;padding:52px 0}
     .final h2{font-size:40px;line-height:1}
     .final .lead{margin-top:12px;color:rgba(255,255,255,.65);font-size:16px}
-    form{display:grid;gap:12px;margin-top:24px}
-    .field label{display:block;font-size:13px;font-weight:600;color:rgba(255,255,255,.7);margin-bottom:6px}
-    .field input,.field select{width:100%;height:54px;border-radius:14px;border:1.5px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#fff;padding:0 16px;font:500 16px 'Plus Jakarta Sans',sans-serif;-webkit-appearance:none;appearance:none}
-    .field select{background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%);background-position:calc(100% - 22px) 24px,calc(100% - 16px) 24px;background-size:6px 6px;background-repeat:no-repeat}
-    .field select option{color:var(--ink)}
-    .field input:focus,.field select:focus{outline:none;border-color:var(--green);background:rgba(255,255,255,.1)}
-    .field input::placeholder{color:rgba(255,255,255,.35)}
-    .final .fine{margin-top:4px}
-    .alt-contact{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
-    .alt-contact a{display:flex;align-items:center;justify-content:center;gap:8px;height:50px;border-radius:14px;border:1.5px solid rgba(255,255,255,.14);font-weight:600;font-size:14px}
+    .final .fine{margin-top:6px}
+    .final-ctas{display:grid;gap:10px;margin-top:24px}
+    .btn-call{border:1.5px solid rgba(255,255,255,.18);color:#fff}
 
-    footer{background:var(--ink-3);color:rgba(255,255,255,.65);padding:34px 0 24px;font-size:14px}
+    footer{background:var(--ink-3);color:rgba(255,255,255,.65);padding:34px 0 calc(100px + var(--safe-b));font-size:14px}
     footer .logo b{color:#fff}
     footer .zones{margin-top:16px;line-height:1.6}
     footer .contact{display:grid;gap:6px;margin-top:16px}
@@ -283,7 +246,7 @@
     /* ---------- Tablet / desktop ---------- */
     @media (min-width:760px){
       :root{--gutter:32px}
-      body{padding-bottom:0}
+      footer{padding-bottom:24px}
       .sticky-bar{display:none}
       .top .wrap{height:68px}
       .top-phone{display:inline}
@@ -293,8 +256,7 @@
       .hero-ctas{grid-template-columns:auto auto;justify-content:start}
       .hero-ctas .btn{width:auto;white-space:nowrap}
       .hero-visual{margin-top:0}
-      .pain-list{grid-template-columns:repeat(3,1fr)}
-      .pain h2,.sec-head h2,.final h2{font-size:54px}
+      .sec-head h2,.final h2{font-size:54px}
       .sec{padding:84px 0}
       .calc{grid-template-columns:1.1fr .9fr;align-items:start}
       .card,.result{padding:30px}
@@ -307,7 +269,7 @@
       .guar{grid-template-columns:repeat(4,1fr)}
       .faq{max-width:760px}
       .final-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-      form{margin-top:0}
+      .final-ctas{margin-top:0}
     }
   </style>
 </head>
@@ -340,7 +302,7 @@
     <div>
       <span class="eyebrow chip-dark"><span class="dot"></span>Instalamos en Pilar, Tigre, Nordelta y Escobar</span>
       <h1 class="serif">Bajá tu boleta de luz <span class="accent">hasta un 80%.</span></h1>
-      <p class="hero-sub">Paneles solares <b>con o sin batería</b> para tu casa en Zona Norte. Nos ocupamos de todo: diseño, instalación y <b>trámite con Edenor</b>. Vos solo firmás.</p>
+      <p class="hero-sub">Paneles solares para tu casa en Zona Norte y, con batería, <b>seguís con luz en los cortes</b>. Nos ocupamos de todo: diseño, instalación y <b>trámite con Edenor</b>.</p>
 
       <div class="hero-ctas">
         <a class="btn btn-wa" data-wa="hero" href="#">
@@ -350,11 +312,6 @@
         <a class="btn btn-ghost" href="#calculadora">Calcular mi ahorro en 30 seg</a>
       </div>
 
-      <!-- EDITAR: poné tu puntaje y cantidad de reseñas reales de Google -->
-      <div class="rating">
-        <span class="stars" aria-hidden="true">★★★★★</span>
-        <span><b>4.9/5</b> en Google · 87 reseñas</span>
-      </div>
     </div>
 
     <div>
@@ -390,37 +347,19 @@
           <div class="bars" aria-hidden="true"><i style="height:30%"></i><i style="height:55%"></i><i style="height:75%"></i><i class="on" style="height:100%"></i><i style="height:80%"></i><i style="height:50%"></i></div>
         </div>
         <div class="tag">
-          <span class="pill"><span class="dot"></span>Ahorro 80% promedio</span>
+          <span class="pill"><span class="dot"></span>Visita sin cargo</span>
           <span class="pill dark">App en tu celu</span>
         </div>
       </div>
 
       <div class="proof">
-        <div><b>+150</b><span>casas instaladas</span></div>
         <div><b>1–3 días</b><span>de instalación</span></div>
+        <div><b>Edenor</b><span>trámite incluido</span></div>
         <div><b>25 años</b><span>garantía paneles</span></div>
       </div>
     </div>
   </div>
 
-  <div class="wrap">
-    <div class="brands">
-      <p>Trabajamos con equipos Tier 1</p>
-      <div class="row"><span>LONGi</span><span>Deye</span><span>Huawei</span><span>Growatt</span><span>Pylontech</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ======================= PROBLEMA ======================= -->
-<section class="pain">
-  <div class="wrap">
-    <h2 class="serif rv">La luz no para de subir.<br><span class="accent">Los cortes tampoco.</span></h2>
-    <div class="pain-list">
-      <div class="pain-item rv"><div class="pain-ico">📈</div><div><b>La boleta se multiplicó</b><span>Con los aumentos de tarifa, muchas casas de Zona Norte ya pagan más de $300.000 por mes.</span></div></div>
-      <div class="pain-item rv"><div class="pain-ico">⚡</div><div><b>Cortes en pleno verano</b><span>Con batería, la heladera, las luces, el WiFi y el portón siguen andando. Ni te enterás.</span></div></div>
-      <div class="pain-item rv"><div class="pain-ico">🏡</div><div><b>Tu casa vale más</b><span>Una casa que genera su propia energía es más atractiva para vender o alquilar.</span></div></div>
-    </div>
-  </div>
 </section>
 
 <!-- ======================= CALCULADORA ======================= -->
@@ -458,15 +397,15 @@
         <div class="stats">
           <div class="stat"><div class="k">Sistema</div><div class="v" id="rKw">6 kW</div><div class="s" id="rPanels">10 paneles</div></div>
           <div class="stat"><div class="k">Ahorro al año</div><div class="v" id="rYear">$2,9M</div><div class="s">a valores de hoy</div></div>
-          <div class="stat"><div class="k">Inversión aprox.</div><div class="v" id="rCost">$5M</div><div class="s">financiación disponible</div></div>
-          <div class="stat"><div class="k">Se paga en</div><div class="v" id="rRoi">~2 años</div><div class="s">después, luz casi gratis</div></div>
+          <div class="stat"><div class="k">En 25 años</div><div class="v" id="r25">$72M</div><div class="s">vida útil de los paneles</div></div>
+          <div class="stat"><div class="k">Cortes de luz</div><div class="v" id="rBat">—</div><div class="s" id="rBatS">agregá batería</div></div>
         </div>
 
         <a class="btn btn-wa" data-wa="calc" href="#">
           <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>
-          Enviarme este presupuesto
+          Quiero mi presupuesto
         </a>
-        <p class="fine">Es una estimación. Con una foto de tu boleta te pasamos el número exacto. Sin compromiso.</p>
+        <p class="fine">Es una estimación. Mandanos una foto de tu boleta y en 24 hs te pasamos el presupuesto exacto. Sin compromiso.</p>
       </div>
     </div>
   </div>
@@ -492,27 +431,25 @@
   <div class="wrap">
     <div class="sec-head rv">
       <h2 class="serif">Elegí tu pack. <span class="accent">Sin sorpresas.</span></h2>
-      <p>Precio final con instalación, estructura, cableado, trámite y app incluidos.</p>
+      <p>Todos incluyen instalación, estructura, cableado, trámite con Edenor y app. Te pasamos el presupuesto exacto según tu boleta y tu techo.</p>
     </div>
 
-    <!-- EDITAR: revisá equipos y precios de cada pack -->
+    <!-- EDITAR: revisá los equipos de cada pack -->
     <div class="scroller" id="packList">
       <article class="pack">
         <div class="tags"><span class="tag-s">Casa chica</span><span style="font-size:12px;opacity:.6">Sin batería</span></div>
         <h3>Pack Esencial<br>5 kW</h3>
         <p class="for">Para boletas de hasta $150.000. Aire, heladera y casa funcionando.</p>
-        <ul><li>8 paneles LONGi Tier 1</li><li>Inversor Growatt 5 kW con WiFi</li><li>Estructura de aluminio</li><li>Ahorro aprox. $120.000/mes</li></ul>
-        <div class="price"><small>Desde</small><b>$3,9M</b></div>
-        <a class="btn btn-wa" data-wa="pack" data-pack="Pack Esencial 5 kW" href="#">Consultar este pack</a>
+        <ul><li>8 paneles LONGi Tier 1</li><li>Inversor Growatt 5 kW con WiFi</li><li>Estructura de aluminio</li><li>Ahorro de hasta 80%</li></ul>
+        <a class="btn btn-wa" data-wa="pack" data-pack="Pack Esencial 5 kW" href="#">Pedir presupuesto</a>
       </article>
 
       <article class="pack best">
         <div class="tags"><span class="tag-s">⭐ El más elegido</span><span class="tag-s alt">Anti‑cortes</span></div>
         <h3>Pack Familia<br>10 kW + Batería</h3>
         <p class="for">Casa de 250–300 m² con pileta y aires. No te enterás de los cortes.</p>
-        <ul><li>16 paneles LONGi Hi‑MO</li><li>Inversor híbrido Deye 10 kW</li><li>Batería Pylontech 10 kWh</li><li>Respaldo: heladera, luces, WiFi y portón</li><li>Ahorro aprox. 80%</li></ul>
-        <div class="price"><small>Desde</small><b>$8,2M</b></div>
-        <a class="btn btn-wa" data-wa="pack" data-pack="Pack Familia 10 kW + Batería" href="#">Consultar este pack</a>
+        <ul><li>16 paneles LONGi Hi‑MO</li><li>Inversor híbrido Deye 10 kW</li><li>Batería Pylontech 10 kWh</li><li>Respaldo: heladera, luces, WiFi y portón</li><li>Ahorro de hasta 80%</li></ul>
+        <a class="btn btn-wa" data-wa="pack" data-pack="Pack Familia 10 kW + Batería" href="#">Pedir presupuesto</a>
       </article>
 
       <article class="pack">
@@ -520,48 +457,11 @@
         <h3>Pack Premium<br>15–20 kW</h3>
         <p class="for">Para boletas de más de $600.000, casas grandes, oficinas y comercios.</p>
         <ul><li>Inversor Huawei SUN2000</li><li>Estructura reforzada</li><li>Opción con baterías</li><li>Proyecto a medida</li></ul>
-        <div class="price"><small>Desde</small><b>A medida</b></div>
         <a class="btn btn-wa" data-wa="pack" data-pack="Pack Premium 15-20 kW" href="#">Pedir proyecto</a>
       </article>
     </div>
     <p class="swipe-hint" style="color:rgba(255,255,255,.5)">Deslizá para ver más →</p>
-    <p class="includes">💳 Consultá por financiación en cuotas.</p>
-  </div>
-</section>
-
-<!-- ======================= OBRAS ======================= -->
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <h2 class="serif">Obras <span class="accent">en tu zona.</span></h2>
-      <p>Algunas casas que ya generan su propia energía.</p>
-    </div>
-    <!-- EDITAR: reemplazá cada <div class="ph"></div> por <img src="fotos/obra1.jpg" alt="..." loading="lazy"> con fotos reales -->
-    <div class="scroller four">
-      <div class="work"><div class="ph"></div><div class="info"><span class="pill">10 kW · Batería</span><b>Nordelta</b><span>Boleta: $520k → $89k</span></div></div>
-      <div class="work"><div class="ph"></div><div class="info"><span class="pill">7,2 kW</span><b>Pilar</b><span>Instalada en 2 días</span></div></div>
-      <div class="work"><div class="ph"></div><div class="info"><span class="pill">8,5 kW</span><b>Tigre</b><span>Ahorro 82%</span></div></div>
-      <div class="work"><div class="ph"></div><div class="info"><span class="pill">5,5 kW</span><b>Escobar</b><span>Sin batería</span></div></div>
-    </div>
-    <p class="swipe-hint">Deslizá para ver más →</p>
-  </div>
-</section>
-
-<!-- ======================= RESEÑAS ======================= -->
-<!-- IMPORTANTE: estas reseñas son de ejemplo. Antes de lanzar anuncios, reemplazalas por reseñas
-     reales de tus clientes (con su permiso). Meta puede rechazar anuncios con testimonios inventados. -->
-<section class="sec sand">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="g-badge"><span class="stars">★★★★★</span> 4.9/5 en Google</span>
-      <h2 class="serif">Lo que dicen <span class="accent">nuestros clientes.</span></h2>
-    </div>
-    <div class="scroller">
-      <article class="review"><span class="stars">★★★★★</span><q>No nos enteramos más de los cortes y la app marca todo. La boleta bajó de $520k a $89k. En 2 días estaba funcionando.</q><div class="who"><span class="avatar">M</span><div><b>María</b><span>Nordelta · 10 kW + batería</span></div></div></article>
-      <article class="review"><span class="stars">★★★★★</span><q>Pensé que era humo. Instalación impecable y el techo quedó perfecto. Se ocuparon de todo el trámite con Edenor.</q><div class="who"><span class="avatar">J</span><div><b>Jorge y Silvina</b><span>Pilar · 7 kW</span></div></div></article>
-      <article class="review"><span class="stars">★★★★★</span><q>Para la oficina fue clave. Bajamos el costo fijo y los fines de semana le vendemos energía a la red.</q><div class="who"><span class="avatar">E</span><div><b>Estudio López</b><span>Vicente López · Comercio</span></div></div></article>
-    </div>
-    <p class="swipe-hint">Deslizá para ver más →</p>
+    <p class="includes">💳 Hay opciones de pago en cuotas. Consultanos.</p>
   </div>
 </section>
 
@@ -586,12 +486,10 @@
   <div class="wrap">
     <div class="sec-head rv"><h2 class="serif">Preguntas <span class="accent">frecuentes.</span></h2></div>
     <div class="faq">
-      <details><summary>¿Cuánto tarda la instalación?</summary><p>De 1 a 3 días según el techo. Desde el primer día ya ves la generación en la app. La conexión del medidor bidireccional con Edenor suele tardar unas semanas más, y el trámite lo hacemos nosotros.</p></details>
+      <details><summary>¿Cuánto cuesta?</summary><p>Depende de tu consumo, tu techo y si querés batería. Por eso no damos un precio genérico: mandanos una foto de tu boleta por WhatsApp y en 24 hs te pasamos un presupuesto cerrado, sin compromiso.</p></details>
       <details><summary>¿Qué pasa los días nublados o de noche?</summary><p>Los días nublados generás menos y de noche no generás. Pero con el medidor bidireccional, lo que te sobra en los días de sol se descuenta de tu boleta. Si tenés batería, de noche y en los cortes usás la energía guardada.</p></details>
-      <details><summary>¿Cuánto voy a ahorrar realmente?</summary><p>Depende de tu consumo y tu techo, pero en Zona Norte el ahorro promedio está entre 70% y 85%. Mandanos una foto de tu boleta y te pasamos el número exacto para tu casa.</p></details>
       <details><summary>¿Ustedes hacen los trámites con Edenor?</summary><p>Sí, está 100% incluido: pedido del medidor bidireccional y habilitación. Vos solo firmás.</p></details>
-      <details><summary>¿Se puede pagar en cuotas?</summary><p>Sí. Consultanos por WhatsApp y te contamos las opciones de financiación disponibles.</p></details>
-      <details><summary>¿Qué mantenimiento necesita?</summary><p>Casi nada. La lluvia limpia los paneles y recomendamos un lavado al año. La app te avisa si algo no funciona bien.</p></details>
+      <details><summary>¿Se puede pagar en cuotas?</summary><p>Sí. Consultanos por WhatsApp y te contamos las opciones de pago disponibles.</p></details>
       <details><summary>¿Le hacen agujeros al techo? ¿Se puede filtrar?</summary><p>Usamos fijaciones con sellado específico para cada tipo de techo (teja, chapa o losa) y la instalación tiene 5 años de garantía contra filtraciones.</p></details>
     </div>
   </div>
@@ -602,33 +500,18 @@
   <div class="wrap final-grid">
     <div class="rv">
       <span class="eyebrow" style="color:var(--green)"><span class="dot"></span>Respondemos en el día</span>
-      <h2 class="serif" style="margin-top:10px">Pedí tu cotización <span class="accent">gratis.</span></h2>
-      <p class="lead">Completá estos 3 datos y se abre WhatsApp con tu consulta lista para enviar. Sin compromiso.</p>
+      <h2 class="serif" style="margin-top:10px">Pedí tu presupuesto <span class="accent">gratis.</span></h2>
+      <p class="lead">Escribinos por WhatsApp y mandanos una foto de tu boleta de luz. En 24 hs te decimos cuánto ahorrás. Sin compromiso.</p>
     </div>
 
-    <form id="leadForm" novalidate>
-      <div class="field"><label for="fName">Tu nombre</label><input id="fName" name="name" autocomplete="given-name" placeholder="Ej: Martín" required></div>
-      <div class="field"><label for="fZone">Barrio / localidad</label><select id="fZone" name="zone" required></select></div>
-      <div class="field"><label for="fBill">¿Cuánto pagás de luz por mes?</label>
-        <select id="fBill" name="bill">
-          <option>Menos de $150.000</option>
-          <option selected>$150.000 a $300.000</option>
-          <option>$300.000 a $500.000</option>
-          <option>$500.000 a $800.000</option>
-          <option>Más de $800.000</option>
-        </select>
-      </div>
-      <button class="btn btn-wa" type="submit" style="margin-top:6px">
+    <div class="rv final-ctas">
+      <a class="btn btn-wa" data-wa="final" href="#">
         <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#wa"/></svg>
-        Enviar por WhatsApp
-      </button>
-      <p class="fine">Tus datos solo se usan para responderte.</p>
-
-      <div class="alt-contact">
-        <a data-tel href="#">📞 Llamar</a>
-        <a data-mail href="#">✉️ Email</a>
-      </div>
-    </form>
+        Escribinos por WhatsApp
+      </a>
+      <a class="btn btn-call" data-tel href="#">📞 Llamar ahora</a>
+      <p class="fine">Lun a Vie 9–18 h · Sáb 10–13 h</p>
+    </div>
   </div>
 </section>
 
@@ -675,8 +558,6 @@ const CONFIG = {
   calc: {
     ahorro: 0.80,                // % de la boleta que se ahorra
     boletaPorKw: 48000,          // $ de boleta mensual que "cubre" cada kW instalado
-    costoKw: 780000,             // $ por kW sin batería (instalado)
-    costoBateria: 2600000,       // $ extra por batería 10 kWh
     panelW: 580,                 // potencia de cada panel
     kwMin: 3, kwMax: 20
   }
@@ -697,10 +578,8 @@ function calc() {
   const c = CONFIG.calc;
   const kw = Math.min(c.kwMax, Math.max(c.kwMin, Math.round((state.bill / c.boletaPorKw) * 2) / 2));
   const save = state.bill * c.ahorro;
-  const cost = kw * c.costoKw + (state.battery ? c.costoBateria : 0);
-  const years = cost / (save * 12);
   const panels = Math.ceil(kw * 1000 / c.panelW);
-  return { kw, save, cost, years, panels, after: state.bill - save };
+  return { kw, save, panels, after: state.bill - save };
 }
 
 function render() {
@@ -715,8 +594,9 @@ function render() {
   $('#rKw').textContent = r.kw.toLocaleString('es-AR') + ' kW';
   $('#rPanels').textContent = r.panels + ' paneles' + (state.battery ? ' + batería' : '');
   $('#rYear').textContent = fmtM(r.save * 12);
-  $('#rCost').textContent = fmtM(r.cost);
-  $('#rRoi').textContent = '~' + (r.years < 1.5 ? '1 año' : Math.round(r.years) + ' años');
+  $('#r25').textContent = fmtM(r.save * 12 * 25);
+  $('#rBat').textContent = state.battery ? 'Con luz' : 'Sin respaldo';
+  $('#rBatS').textContent = state.battery ? 'heladera, luces y WiFi' : 'activá la batería arriba';
 }
 
 // Zonas (chips + select)
@@ -727,7 +607,6 @@ $('#zones').addEventListener('click', e => {
   $$('#zones button').forEach(x => x.setAttribute('aria-pressed', x === b));
   render();
 });
-$('#fZone').innerHTML = '<option value="" disabled selected>Elegí tu zona</option>' + CONFIG.zonas.map(z => `<option>${z}</option>`).join('');
 
 $('#bill').addEventListener('input', e => { state.bill = +e.target.value; render(); });
 $('#battery').addEventListener('click', e => {
@@ -753,7 +632,7 @@ document.addEventListener('click', e => {
   const wa = e.target.closest('[data-wa]');
   if (wa) {
     e.preventDefault();
-    track('Contact', { content_name: wa.dataset.wa });
+    track('Lead', { content_name: wa.dataset.wa });
     window.open(waLink(messageFor(wa)), '_blank', 'noopener');
   }
   if (e.target.closest('[data-tel]')) track('Contact', { content_name: 'telefono' });
@@ -761,18 +640,6 @@ document.addEventListener('click', e => {
 
 $$('[data-tel]').forEach(a => a.href = 'tel:' + CONFIG.telefono);
 $$('[data-mail]').forEach(a => { a.href = 'mailto:' + CONFIG.email; if (a.closest('.contact')) a.textContent = CONFIG.email; });
-
-// Formulario → WhatsApp
-$('#leadForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const f = e.target;
-  const name = f.name.value.trim(), zone = f.zone.value;
-  if (!name) { f.name.focus(); f.name.style.borderColor = '#FF6B5A'; return; }
-  if (!zone) { f.zone.focus(); f.zone.style.borderColor = '#FF6B5A'; return; }
-  const msg = `Hola Albor Solar! Soy ${name}, de ${zone}.\nPago de luz: ${f.bill.value} por mes.\nQuiero una cotización de paneles solares.`;
-  track('Lead', { content_name: 'formulario', zona: zone });
-  window.open(waLink(msg), '_blank', 'noopener');
-});
 
 // Barra fija: aparece después del hero, se oculta en el formulario final
 const bar = $('#stickyBar');
